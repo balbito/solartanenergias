@@ -3,7 +3,7 @@ import React from 'react'
 const CartWidget = () => {
   return (
     <div>
-        🛒6
+        🛒1
     </div>
   )
 }

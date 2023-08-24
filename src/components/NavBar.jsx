@@ -11,7 +11,7 @@ import CartWidget from './CartWidget'
 const NavBar = () => {
     return (
         <div>
-            <Flex>
+            <Flex className='navbar'>
                 <Box p='4'>
                     <img className='logo' src="src/assets/logotuti.png" alt="logo" />
                 </Box>
