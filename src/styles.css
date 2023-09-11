@@ -1,17 +1,11 @@
-.navbar{
-    font-size: 25px;
-    color: #507255;
-    
-}
 .logo {
-    width: 75px;
+    width: 60px;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    font-size: 75px;
-    color: #507255;
+.number-cart {
+    font-size: 15px;
 }
+
+
+
+
