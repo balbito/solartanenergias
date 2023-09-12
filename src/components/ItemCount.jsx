@@ -10,15 +10,15 @@ const ItemCount = () => {
       
         <Stack direction={['column', 'row']} spacing='30px' >
           <Box w='40px' h='40px'>
-            <Button size='xs' onClick={() => setContador(contador > 0 ? contador - 1 : 0)}>
+            <Button size='xs' color='#5f9e68' border='solid' bg='white' onClick={() => setContador(contador > 0 ? contador - 1 : 0)}>
               -
             </Button>
           </Box>
-          <Box w='40px' h='40px'>
-            <p>{contador}</p>
+          <Box w='40' h='30px' color='#5f9e68' border='solid' bg='white' borderRadius='4px'>
+            <p className='contador'>{contador}</p>
           </Box>
           <Box w='40px' h='40px'>
-            <Button size='xs' onClick={() => setContador(contador + 1)}>
+            <Button size='xs' color='#5f9e68' border='solid' bg='white' onClick={() => setContador(contador + 1)}>
               +
             </Button>
           </Box>

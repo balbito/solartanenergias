@@ -27,7 +27,7 @@ const ItemDetail = ({ productos }) => {
                         <Text color='#5f9e68' fontSize='2xl'>${p.precio}</Text>
                         </Stack>
                     </CardBody>
-                    <Divider />
+                    <Divider color='#5f9e68'/>
                     <CardFooter>
                       <ItemCount />
                     </CardFooter>

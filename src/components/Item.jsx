@@ -13,10 +13,10 @@ const Item = ({ producto }) => {
           <CardBody>
             <Image src={producto.image}  borderRadius='lg' />
             <Stack mt='6' spacing='3'>
-              <Heading size='md'>{producto.nombre}</Heading>
+              <Heading size='md' color='#5f9e68'>{producto.nombre}</Heading>
             </Stack>
           </CardBody>
-          <Divider />
+          <Divider color='#5f9e68' />
           <CardFooter>
             <ButtonGroup spacing='2'>
               <Button variant='solid' style={{ backgroundColor: '#507255', color: 'white'}}>
