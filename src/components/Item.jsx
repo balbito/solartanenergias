@@ -9,7 +9,7 @@ const Item = ({ producto }) => {
   return (
     <div>
       <Box  display="flex" alignItems="center" justifyContent="space-between"  >
-        <Card  w='250px' h='200px' maxW='sm'  style={{backgroundColor: '#5f9e68'}} >
+        <Card  w='250px' h='200px' maxW='sm'   >
           <CardBody>
             <Image src={producto.image}  borderRadius='lg' />
             <Stack mt='6' spacing='3'>

@@ -12,7 +12,8 @@ const ItemList = ({ productos }) => {
 
     <div>
       <Center>
-        <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={14} mt='40'>
+        <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={14} mt='20'>
+        
           {productos.map((p) => {
             return (
               <>

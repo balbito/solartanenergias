@@ -39,8 +39,8 @@ const ItemDetailContainer = () => {
   return (
     <>
       <div>
-        <Center bg='#519C54' mt='100px' >
-          <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={14} mt='40'>
+        <Center bg='#519C54'  >
+          <Grid templateColumns={['1fr', '1fr', '1fr', 'repeat(3, 1fr)']} gap={14} mt='20'>
             <ItemDetail
               productos={productos} />
           </Grid>

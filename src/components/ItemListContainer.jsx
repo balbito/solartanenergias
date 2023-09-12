@@ -39,7 +39,7 @@ const ItemListContainer = () => {
   return (
     <>
        <Box bg='#519C54' minHeight='100vh'>
-        <Center><Text marginTop='150' fontSize='50px' color='white'>Bienvenidos a Solartan! Energias Renovables</Text></Center>
+        <Center><Text marginTop='50' fontSize='50px' color='white'>Bienvenidos a Solartan! Energias Renovables</Text></Center>
       {
         categoria ? <ItemList productos={filteredProducts} /> : <ItemList productos={productos} />
       }

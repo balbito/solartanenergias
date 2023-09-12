@@ -12,19 +12,19 @@ const ItemDetail = ({ productos }) => {
 
   return (
     <div>
-      <Box borderRadius='lg' mb='100px'  >
+      <Box borderRadius='lg' mb='100px' >
         <Center >
           {filteredProducts.map((p) => {
             return (
               <div key={p.id}>
                 <Box display="flex" alignItems="center" justifyContent="space-between">
 
-                  <Card maxW='sm' style={{ backgroundColor: '#5f9e68' }}>
+                  <Card maxW='sm'>
                     <CardBody>
                       <Stack mt='6' spacing='3'>
-                        <Heading size='md' color='white'>{p.nombre}</Heading>
-                        <Text color='white'>{p.descripcion}</Text>
-                        <Text color='white' fontSize='2xl'>${p.precio}</Text>
+                        <Heading size='md' color='#5f9e68'>{p.nombre}</Heading>
+                        <Text color='#5f9e68'>{p.descripcion}</Text>
+                        <Text color='#5f9e68' fontSize='2xl'>${p.precio}</Text>
                         </Stack>
                     </CardBody>
                     <Divider />
