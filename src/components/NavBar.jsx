@@ -14,7 +14,7 @@ const NavBar = () => {
         <div>
             <Flex fontSize='25px' color='#507255'>
                 <Box p='4'>
-                    <Link to={"/"}>
+                    <Link to={'/'}>
                         <img className='logo' src="src/assets/logotuti.png" alt="logo" />
                     </Link>
                 </Box>

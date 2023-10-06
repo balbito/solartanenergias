@@ -5,7 +5,6 @@ import {
 } from "@chakra-ui/react";
 
 
-
 const ItemList = ({ productos }) => {
 
   return (
@@ -29,4 +28,4 @@ const ItemList = ({ productos }) => {
   )
 }
 
-export default ItemList
+export default React.memo(ItemList)

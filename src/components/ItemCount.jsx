@@ -1,29 +1,31 @@
 import { useState } from 'react';
-import { Button, Stack, Box } from '@chakra-ui/react';
+import { Button, Stack, Box, Flex } from '@chakra-ui/react';
 
-const ItemCount = () => {
+const ItemCount = ({onAdd}) => {
 
   const [contador, setContador] = useState(0)
 
   return (
     <>
       
-        <Stack direction={['column', 'row']} spacing='30px' >
+        <Stack direction={['column', 'row']} spacing='20px' >
           <Box w='40px' h='40px'>
-            <Button size='xs' color='#5f9e68' border='solid' bg='white' onClick={() => setContador(contador > 0 ? contador - 1 : 0)}>
+            <Button size='sm' color='white' border='solid' bg='#5f9e68' onClick={() => setContador(contador > 0 ? contador - 1 : 0)}>
               -
             </Button>
           </Box>
-          <Box w='40' h='30px' color='#5f9e68' border='solid' bg='white' borderRadius='4px'>
+          <Box w='20' h='35px' color='white' border='solid' bg='#5f9e68' borderRadius='4px'>
             <p className='contador'>{contador}</p>
           </Box>
           <Box w='40px' h='40px'>
-            <Button size='xs' color='#5f9e68' border='solid' bg='white' onClick={() => setContador(contador + 1)}>
+            <Button size='sm' color='white' border='solid' bg='#5f9e68' onClick={() => setContador(contador < 10 ? contador + 1 : 10)}>
               +
             </Button>
           </Box>
+          <Button size='sm' color='white' border='solid' bg='#5f9e68' onClick={() => onAdd(contador)}>Agregar al carrito</Button>
         </Stack>
       
+
     </>
 
   )

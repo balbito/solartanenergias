@@ -1,7 +1,12 @@
 import { Box, Spacer, Flex } from '@chakra-ui/react'
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../context/CartContext'
 
 const CartWidget = () => {
+
+  const { cart } = useContext(CartContext)
+  const totalQuantity = cart.reduce((total, item) => total + item.cantidad, 0)
+
   return (
     <div>
       <Flex>
@@ -12,7 +17,7 @@ const CartWidget = () => {
         </Box>
         <Spacer />
         <Box>
-          <p className='number-cart'>1</p>
+          <p className='number-cart'>{totalQuantity}</p>
         </Box>
       </Flex>
     </div>
